@@ -44,7 +44,25 @@ export default function Summary() {
   const handleConfirm = () => {
     // Here you can save the data or navigate to a new page
     console.log('User Data Confirmed:', params);
-    // router.push('/thank-you'); // Example next page
+    router.push({pathname:'/userDashboard',
+      params: {
+         name,
+        age,
+        gender,
+        height,
+        weight,
+        goal,
+        activity,
+        isVegetarian,
+        isVegan,
+        isGlutenFree,
+        isLactoseFree,
+        workoutLocation,
+        daysPerWeek,
+        equipmentAvailable
+      }
+    })
+ 
   };
 
   return (

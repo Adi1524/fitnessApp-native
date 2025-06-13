@@ -38,7 +38,7 @@ export default function WorkoutPreference() {
 
   const handleNext = () => {
     router.push({
-      pathname: '/userDetails/summary', // Or wherever you want to go next
+      pathname: '/userDetails/summary',
       params: {
         name,
         age,
